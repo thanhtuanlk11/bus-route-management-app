@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="QLPhanAnh.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+</head>
+<body>
+    <form runat="server">
+
+
+        <%--<div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="~/">Quản Lý Xe Buyst</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                         <li><a runat="server" href="~/Pages/Reflect.aspx">Phản Ánh</a></li>
+                        <li><a runat="server" href="~/Pages/Reflect1.aspx">Dữ Liệu Phản Ánh Người Dùng</a></li>
+                        <li><a runat="server" href="~/Pages/ReflectUser.aspx">Phản ánh của người dùng</a></li>
+                        <li><a runat="server" href="~/Pages/Liên Hệ.aspx">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>--%>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" runat="server" href="~/Pages/Reflect.aspx">Loại Phản Ánh</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" runat="server" href="~/Pages/Reflect1.aspx">Dữ liệu Phản Ánh Người Dùng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" runat="server" href="~/Pages/ReflectUser.aspx">Phản Ánh Người Dùng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " runat="server" href="~/Pages/Liên Hệ.aspx">Liên Hệ</a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </nav>
+        <div class="container my-2 p-3 body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Quản lý Xe buýt</p>
+            </footer>
+        </div>
+
+    </form>
+</body>
+</html>

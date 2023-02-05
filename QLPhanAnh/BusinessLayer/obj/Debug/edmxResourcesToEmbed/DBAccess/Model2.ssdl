@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ROUTE_MANAGEMENTModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Reflect">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ReflectTypeID" Type="int" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="Content" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="VideoOrPicture" Type="nvarchar" MaxLength="1000" Nullable="false" />
+    <Property Name="Status" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ReflectType">
+    <Key>
+      <PropertyRef Name="ReflectTypeID" />
+    </Key>
+    <Property Name="ReflectTypeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ROUTE_MANAGEMENTModel1StoreContainer">
+    <EntitySet Name="Reflect" EntityType="Self.Reflect" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ReflectType" EntityType="Self.ReflectType" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

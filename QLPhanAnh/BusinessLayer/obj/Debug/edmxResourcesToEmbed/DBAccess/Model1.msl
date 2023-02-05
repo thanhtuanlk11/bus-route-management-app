@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ROUTE_MANAGEMENTModelStoreContainer" CdmEntityContainer="ROUTE_MANAGEMENTEntities">
+    <EntitySetMapping Name="Reflects">
+      <EntityTypeMapping TypeName="ROUTE_MANAGEMENTModel.Reflect">
+        <MappingFragment StoreEntitySet="Reflect">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ReflectTypeID" ColumnName="ReflectTypeID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="VideoOrPicture" ColumnName="VideoOrPicture" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReflectTypes">
+      <EntityTypeMapping TypeName="ROUTE_MANAGEMENTModel.ReflectType">
+        <MappingFragment StoreEntitySet="ReflectType">
+          <ScalarProperty Name="ReflectTypeID" ColumnName="ReflectTypeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResponsibleUnits">
+      <EntityTypeMapping TypeName="ROUTE_MANAGEMENTModel.ResponsibleUnit">
+        <MappingFragment StoreEntitySet="ResponsibleUnit">
+          <ScalarProperty Name="ResponsibleUnitID" ColumnName="ResponsibleUnitID" />
+          <ScalarProperty Name="ReponsibleUnitName" ColumnName="ReponsibleUnitName" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
